@@ -201,7 +201,7 @@
         line-height: 52px!important;
     }
     /*хаки для FF*/
-    @-moz-document url-prefix() {
+@-moz-document url-prefix() {
         .nav-userbar li.nav-userbar-username a.username {
             line-height: 51px!important;
         }
@@ -223,7 +223,7 @@
         top: 7px!important;
     }
     .topic .topic-footer .topic-tags {
-    margin: 0!important;
+        margin: 0!important;
     }
 
 }
@@ -237,11 +237,11 @@
 
 @media (min-width: 768px) and (max-width: 979px) {
     .nav.nav-pills li a {
-    font-size: 13px!important;
+        font-size: 13px!important;
     }
     .nav.nav-profile li {
-    margin-right: 19px!important;
-   }
+        margin-right: 19px!important;
+    }
 }
 
 
@@ -401,7 +401,7 @@
     }
 
     .nav.nav-pills li a {
-    font-size: 14px!important;
+        font-size: 14px!important;
     }
 
     .bigpreview-type .topic-bigpreview .mark {
@@ -493,13 +493,13 @@
     }
 
     .form-profile .avatar-change {
-    background: none repeat scroll 0 0 #FFFFFF!important;
-    font-size: 11px!important;
-    margin-bottom: 20px!important;
-    position: static!important;
-    padding-left: 10px!important;
-    padding-top: 10px!important;
-    width: 100px!important;
+        background: none repeat scroll 0 0 #FFFFFF!important;
+        font-size: 11px!important;
+        margin-bottom: 20px!important;
+        position: static!important;
+        padding-left: 10px!important;
+        padding-top: 10px!important;
+        width: 100px!important;
     }
 
     .bigpreview-type .topic-bigpreview .mark {
@@ -517,6 +517,21 @@
 
 
 @media (max-width: 480px) {
+
+    .name-error {
+        margin: 0!important;
+        font-size: 10em!important;
+        border: none!important;
+        -moz-box-shadow: none!important;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+        line-height: 180px!important;
+        padding: 0 25px;
+    }
+    .text-error {
+        font-size: 26px!important;
+        padding: 0!important;
+    }
 
     .item-list li.js-title-comment {
         display: none;
@@ -792,21 +807,21 @@
     }
 
     .nav.nav-pills li a {
-    font-size: 10px!important;
+        font-size: 10px!important;
     }
 
     .form-profile .avatar-change {
-    background: none repeat scroll 0 0 #FFFFFF!important;
-    font-size: 11px!important;
-    margin-bottom: 20px!important;
-    position: static!important;
-    padding-left: 10px!important;
-    padding-top: 10px!important;
-    width: 100px!important;
+        background: none repeat scroll 0 0 #FFFFFF!important;
+        font-size: 11px!important;
+        margin-bottom: 20px!important;
+        position: static!important;
+        padding-left: 10px!important;
+        padding-top: 10px!important;
+        width: 100px!important;
     }
 
     .input-width-400 {
-    width: 300px!important;
+        width: 300px!important;
     }
 }
 
