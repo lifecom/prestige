@@ -36,6 +36,11 @@ $config['view']['bigpreview']['type'] = 'off';
  */
 $config['view']['ogmeta']['type'] = 'on';
 
+/* Отключение тегов в ленте топивок в тексте ДО <cut>
+ * on - теги включены
+ * off - теги выключены
+ */
+$config['view']['text']['cuttag'] = 'off';
 
 
 /*
