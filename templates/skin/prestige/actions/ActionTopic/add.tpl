@@ -1,9 +1,4 @@
-{if $sEvent=='add'}
-	{include file='header.tpl' menu='create'}
-{else}
-	{include file='header.tpl'}
-	<h2 class="page-header">{$aLang.topic_topic_edit}</h2>
-{/if}
+{include file='header.tpl'}
 
 {include file='menu_create.tpl'}
 
