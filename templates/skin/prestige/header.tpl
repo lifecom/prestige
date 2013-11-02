@@ -216,7 +216,7 @@
 		ls.registry.set('block_stream_show_tip',{json var=$oConfig->Get('block.stream.show_tip')});
 	</script>
 
-    {if $sAction=='login' && $sEvent=='exit'}
+    {if ($sAction=='login' && $sEvent=='exit') || ($sAction=='registration' && $sEvent=='confirm')}
         <style>
             html, body {
                 height: 100%;
