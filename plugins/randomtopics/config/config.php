@@ -14,36 +14,24 @@ $config ['Topics_Count'] = 9;
 
 
 // Выводим блок
+$config['widgets'][] = array(
+    'name' => 'random',
+    'group' => 'right',
+    'priority' => 10,
+    'params'=>array('plugin'=>'randomtopics'),
+    'action' => array(
+        'index',
+        'blogs',
+        'people',
+        'blog',
+        'blog' => array('{topics}','{topic}','{blog}'),
+        'my',
+        'personal_blog',
+        'comments',
+        'search'
+    ),
+);
 
-Config::Set ('block.rule_random', array (
-    'action'  => array(
-        'index','blogs','people','blog','blog' => array('{topics}','{topic}','{blog}'),'my','personal_blog','comments','search'
-    ),
-    'blocks' => array (
-        'right' => array (
-            'random' => array (
-                'params' => array ('plugin' => 'randomtopics'),
-                'priority' => 0,
-            ),
-        )
-    ),
-));
-
-// Для мобильной версии
-
-Config::Set ('block.rule_random_mobile', array (
-    'action'  => array(
-        'index', 'blog' => array('{topics}','{blog}')
-    ),
-    'blocks'  => array(
-        'rightmobile' => array(
-            'random' => array (
-                'params' => array ('plugin' => 'randomtopics'),
-                'priority' => 10,
-            ),
-        ),
-    ),
-));
 
 return $config;
 
